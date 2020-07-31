@@ -27,7 +27,7 @@ presence.on("UpdateData", async () => {
       presenceData.smallImageKey = "call";
     }
     //presenceData.state = user;
-    presenceData.state = "(Hidden until presence settings.)"; // Add setting for this when presence settings are a thing!!
+    presenceData.state = "(Hidden.)"; // Add setting for this when presence settings are a thing!!
   } else if (document.location.pathname.includes("/t/")) {
     presenceData.largeImageKey = "messenger";
     presenceData.startTimestamp = browsingStamp;
@@ -43,7 +43,7 @@ presence.on("UpdateData", async () => {
       presenceData.smallImageKey = "writing";
     }
     //presenceData.state = user.innerText;
-    presenceData.state = "(Hidden until presence settings.)"; // Add setting for this when presence settings are a thing!!
+    presenceData.state = "(Hidden.)"; // Add setting for this when presence settings are a thing!!
   } else if (document.location.pathname.includes("/new")) {
     presenceData.largeImageKey = "messenger";
     presenceData.startTimestamp = browsingStamp;
